@@ -1442,7 +1442,7 @@ const nexusMapFallback={src:VENUE_MAP.src,width:VENUE_MAP.width,height:VENUE_MAP
 /* v8: 정적 호스팅(Netlify 등) + Apps Script JSON API.
    아래 주소에 Apps Script 웹앱 배포 URL(…/exec)을 넣으면 시트 변경이 자동 반영됩니다.
    비워두면 파일에 저장된 데이터만 보여줍니다. */
-const NEXUS_API_URL = 'https://script.google.com/macros/s/여기에_배포ID/https://script.google.com/macros/s/AKfycbw_XH9WECoYrOjCod-OJn9XR-xk7yWq8Rh8WXby3yTCXRC9GqXYjhGgHX2r8a9jDt8N/exec';
+const NEXUS_API_URL = 'https://script.google.com/macros/s/AKfycbw_XH9WECoYrOjCod-OJn9XR-xk7yWq8Rh8WXby3yTCXRC9GqXYjhGgHX2r8a9jDt8N/exec';
 const NEXUS_API_METHODS = {getNexusVersion:'version', getNexusSnapshot:'snapshot', getNexusVenueImage:'map'};
 const nexusGasBridge = Boolean(window.google && google.script && google.script.run);
 const nexusApiReady = /^https:\/\/script\.google\.com\/macros\/s\/[A-Za-z0-9_-]{20,}\/exec$/.test(NEXUS_API_URL);
